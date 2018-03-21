@@ -194,14 +194,14 @@ let app = new PIXI.Application({
  [PIXI.Application](http://pixijs.download/release/docs/PIXI.Application.html).
 
 这些设置做了些什么呢？
-`antialias`使得字体的边界和几何图形更加圆滑（WebGL的anti-aliasing在所有平台都不可用，所以你需要在你的游戏的标签平台上测试他们）。`transparent`将整个Canvs标签的透明度进行了设置。`resolution`让Pixi在不同的分辨率和像素密度的平台上运行变得简单。设置分辨率对于这个教程而言有些超纲了，到那时你可以看[Mat Grove'sexplanation](http://www.goodboydigital.com/pixi-js-v2-fastest-2d-webgl-renderer/)之中是如何使用`resolution`的所有细节的。但是平常，只要保持`resolution`是1，就可以应付大多数工程了。
+`antialias`使得字体的边界和几何图形更加圆滑（WebGL的anti-aliasing在所有平台都不可用，所以你需要在你的游戏的标签平台上测试他们）。`transparent`将整个Canvas标签的透明度进行了设置。`resolution`让Pixi在不同的分辨率和像素密度的平台上运行变得简单。设置分辨率对于这个教程而言有些超纲了，到那时你可以看[Mat Grove'sexplanation](http://www.goodboydigital.com/pixi-js-v2-fastest-2d-webgl-renderer/)之中是如何使用`resolution`的所有细节的。但是平常，只要保持`resolution`是1，就可以应付大多数工程了。
 
 Pixi的`画布`对象将会默认选择WebGL引擎渲染模式，它更快并且可以让你使用一些壮观的视觉特效————如果你把他们都学了。但是如果你需要强制使用Canvas引擎绘制而抛弃WebGL，你可以设置`forceCanvas`选项为`true`，像这样：
 ```js
 forceCanvas: true,
 ```
 
-如果你需要在你创建canvs标签之后改变它的背景色，设置 `app.renderer`对象的`backgroundColor`属性为一个任何的十六进制颜色：
+如果你需要在你创建canvas标签之后改变它的背景色，设置 `app.renderer`对象的`backgroundColor`属性为一个任何的十六进制颜色：
 
 ```js
 app.renderer.backgroundColor = 0x061639;
@@ -226,7 +226,7 @@ app.renderer.resize(window.innerWidth, window.innerHeight);
 ```
 (\*这个通配符, 是CSS选择所有HTML元素的意思。)
 
-如果你想要canvs在任何浏览器中统一尺寸，你可以使用[`scaleToWindow` 成员函数](https://github.com/kittykatattack/scaleToWindow).
+如果你想要canvas在任何浏览器中统一尺寸，你可以使用[`scaleToWindow` 成员函数](https://github.com/kittykatattack/scaleToWindow).
 
 <a id='sprites'></a>
 Pixi 精灵
@@ -758,7 +758,7 @@ loader
   .add("images/tileset.png")
   .load(setup);
 ```
-现在，在图像被加载之后，用一个矩形块去截取雪碧图来创建精灵的纹理。下面是提取火箭，创建精灵，在canvs上显示它的代码。
+现在，在图像被加载之后，用一个矩形块去截取雪碧图来创建精灵的纹理。下面是提取火箭，创建精灵，在canvas上显示它的代码。
 ```js
 function setup() {
 
