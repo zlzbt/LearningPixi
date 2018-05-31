@@ -293,7 +293,7 @@ function setup() {
   );
 }
 ```
-这是这个教程之中用来家在图像和创建精灵的通用方法。
+这是这个教程之中用来加载图像和创建精灵的通用方法。
 
 你可以链式调用`add`方法来加载一系列图像，像下面这样：
 ```js
@@ -1356,7 +1356,7 @@ function keyboard(keyCode) {
 ```js
 let keyObject = keyboard(asciiKeyCodeNumber);
 ```
-这个函数只接受一个参数就是键盘对应的ASCII键值数，也就是你想监听的键盘按键。 这是[键盘键ASSII值列表]((http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=00000520.html)).
+这个函数只接受一个参数就是键盘对应的ASCII键值数，也就是你想监听的键盘按键。 这是[键盘键ASCII值列表](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode).
 
 然后给键盘对象赋值`press`和`release`方法：
 ```js
@@ -1617,7 +1617,7 @@ let superFastSprites = new PIXI.particles.ParticleContainer();
 ```js
 let superFastSprites = new ParticleContainer(maxSize, properties, batchSize, autoResize);
 ```
-默认的`maxSize`是 15,000。所以，如果你需要包裹更多的精灵，把它设置为更高的数字。配置参数是一个拥有五个布尔值的对象：`scale`, `position`, `rotation`, `uvs` 和 `alpha`。默认的值是 `position` 为 `true`，其他都为 `false`。这意味着如果你想在 `ParticleContainer `改变精灵的`rotation`, `scale`, `alpha`, 或者 `uvs`，你得先把这些属性设置为 `true`，像这样：
+默认的`maxSize`是 1,500。所以，如果你需要包裹更多的精灵，把它设置为更高的数字。配置参数是一个拥有五个布尔值的对象：`scale`, `position`, `rotation`, `uvs` 和 `alpha`。默认的值是 `position` 为 `true`，其他都为 `false`。这意味着如果你想在 `ParticleContainer `改变精灵的`rotation`, `scale`, `alpha`, 或者 `uvs`，你得先把这些属性设置为 `true`，像这样：
 ```js
 let superFastSprites = new ParticleContainer(
   size,
