@@ -1,7 +1,8 @@
 Pixi教程
 =============
 
-基于官方教程翻译；水平有限，如有错误欢迎提issue，转载请注明出处。翻译者为[htkz](https://github.com/htkz)（完成了用 Pixi 绘制几何图形 和 显示文本 章节）和[zainking](https://github.com/ZainKing)(完成了其他所有章节)
+基于官方教程翻译；水平有限，如有错误欢迎提PR，转载请注明出处。翻译者为[htkz](https://github.com/htkz)（完成了用 Pixi 绘制几何图形 和 显示文本 章节）和[zainking](https://github.com/ZainKing)(完成了其他所有章节)
+另感谢[htkz](https://github.com/explooosion)、[NearZXH](https://github.com/NearZXH)以及[HHHHhgqcdxhg](https://github.com/HHHHhgqcdxhg)对错误及错别字等做出的订正。
 
 这个教程将要一步步介绍怎么用[Pixi](https://github.com/pixijs/pixi.js)做游戏或者交互式媒体。这个教程已经升级到 **[Pixi v4.5.5](https://github.com/pixijs/pixi.js/releases/tag/v4.5.5)**。如果你喜欢这个教程，[你一定也喜欢这本书，它比这个教程多了80%的内容](http://www.springer.com/us/book/9781484210956)。
 
