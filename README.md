@@ -282,7 +282,7 @@ let sprite = new PIXI.Sprite(
   PIXI.loader.resources["images/anyImage.png"].texture
 );
 ```
-这里是一个完整的加载图像的代码。调用`setup`方法，并未加载的图像创建一个精灵。
+这里是一个完整的加载图像的代码。调用`setup`方法，并为加载的图像创建一个精灵。
 ```js
 PIXI.loader
   .add("images/anyImage.png")
