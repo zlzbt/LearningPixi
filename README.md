@@ -566,7 +566,7 @@ add(name, url, optionObject, callbackFunction)
 `options.crossOrigin` (Boolean): 源文件请求跨域不？默认是自动设定的。  
 `options.loadType`: 源文件是怎么加载进来的？默认是`Resource.LOAD_TYPE.XHR`。
 `options.xhrType`: 用XHR的时候该怎么处理数据？ 默认是`Resource.XHR_RESPONSE_TYPE.DEFAULT`。  
-`callbackFunction`: 当这个特定的函数加载完，这个特定的函数将会被执行。
+`callbackFunction`: 当这个特定的资源加载完后，这个函数将会被执行。
 
 只有`url`必填（你总得加载个文件吧。）
 
